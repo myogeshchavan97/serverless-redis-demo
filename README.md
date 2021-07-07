@@ -1,3 +1,24 @@
+# Strapi application
+
+To run this application, first install the [netlify-cli](https://www.npmjs.com/package/netlify-cli) as a global dependency by executing the following command:
+
+```
+npm install netlify-cli -g
+
+OR
+
+sudo npm install netlify-cli -g
+```
+
+create a new `.env` file in the project folder and add the value for following environment variable from your upstash redis database
+
+```js
+DB_CONNECTION_URL=your_ioredis_connection_url
+```
+
+and execute the `netlify dev` command to start the application and access the application at [http://localhost:8888/](http://localhost:8888/).
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
